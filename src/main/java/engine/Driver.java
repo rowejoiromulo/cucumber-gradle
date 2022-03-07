@@ -9,6 +9,7 @@ public class Driver {
     private WebDriver driver;
 
     public void start() {
+//        TODO: create condition to make browser init dynamic
         driver = new GoogleChromeDriver();
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

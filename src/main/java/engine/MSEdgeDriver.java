@@ -16,8 +16,6 @@ public class MSEdgeDriver extends EdgeDriver {
     }
     private static EdgeOptions getCaps() {
         EdgeOptions options = new EdgeOptions();
-//        options.addArguments("-foreground");
-//        options.addArguments("start-maximized");
         List<String> args = Arrays.asList("-foreground", "start-maximized");
         Map<String, Object> map = new HashMap<>();
         map.put("args", args);

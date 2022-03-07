@@ -42,7 +42,7 @@ public class LoginSteps {
 
     @Then("Product inventory is shown")
     public void inventory_page() {
-        // check if URL matches
+        // check if URL matches the homepage URL
         String inventoryURL = driver.getCurrentUrl();
         then(inventoryURL).isEqualTo(loginPage.BASE_URL + homePage.ENDPOINT);
 

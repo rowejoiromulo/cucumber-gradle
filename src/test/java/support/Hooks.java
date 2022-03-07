@@ -21,6 +21,7 @@ public class Hooks {
 
     @After()
     public void after() {
+//        TODO: Add validation if the scenario failed, attach screenshot
         driver.close();
         System.out.println("INSIDE AFTER HOOK");
     }
